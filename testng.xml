@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="Applitools Project" parallel="tests">
+    <!-- GLOBAL CONFIG -->
+    <parameter name="UseEyes" value="true"/>
+    <parameter name="APIKey" value=""/>
+    <parameter name="UseVisualGrid" value="false"/>
+    <parameter name="WaitBeforeScreenshots" value="0" />
+    <parameter name="LocalViewport" value="1600x900"/>
+
+    <!-- LOGGING -->
+    <parameter name="EnableEyesLogger" value="true"/>
+
+    <!-- SUITE/TEST CONFIG -->
+    <parameter name="BatchName" value="My Demo"/>
+    <parameter name="BatchID" value="" />
+    <parameter name="TestName" value="Demo"/>
+    <parameter name="AppName" value="Demo"/>
+
+    <!-- LOCAL BROWSER CONFIG -->
+    <parameter name="LocalBrowser" value="chrome"/>
+    <parameter name="ChromeDriverLocation" value="c:/selenium/chromedriver.exe"/>
+    <parameter name="FirefoxDriverLocation" value="c:/selenium/geckodriver.exe"/>
+    <parameter name="IEDriverLocation" value="c:/selenium/IEDriverServer.exe"/>
+    <parameter name="EdgeDriverLocation" value="c:/selenium/msedgedriver.exe"/>
+
+    <!-- VISUAL GRID CONFIG -->
+    <parameter name="VisualGridConcurrentTests" value="5" />
+    <parameter name="RunOnDesktop" value="true"/>
+    <parameter name="RunOnMobile" value="false"/>
+    <parameter name="UseMobileViewportForCapture" value="false"/>
+    <parameter name="DisableBrowserFetching" value="true"/>
+    <parameter name="UFGHeadlessChrome" value="false"/>
+    <parameter name="UseLayoutBreakpoints" value="false"/>
+    <parameter name="PolyfillAdoptedStylesheets" value="false"/>
+    <parameter name="UseIEv2" value="true"/>
+
+    <!-- VISUAL GRID MOBILE CONFIG -->
+    <parameter name="MobilePortrait" value="true"/>
+    <parameter name="MobileLandscape" value="true"/>
+
+    <!-- MISC -->
+    <parameter name="UseCustomUserAgent" value="false"/>
+    <parameter name="CustomUserAgent" value="Webkit"/>
+    <parameter name="UseHeadless" value="false"/>
+
+    <parameter name="URL" value="https://applitools.com/helloworld"/>
+
+
+    <test name="Demo">
+        <classes>
+            <class name="ApplitoolsExample" />
+        </classes>
+    </test>
+
+
+
+</suite>
